@@ -9,7 +9,7 @@ The Video "Portable Raspberry Pi Laptop with a Custom Battery Charger" is at thi
 
 https://vimeo.com/504006511
 
-The folders in this repo are organized as follows:
+The folders at this repo are organized as follows:
 
   AT Tiny Supervisor folder contains the AT Tiny 85 code to supervise the charging of a 3 series or 4 series wired battery pack.
   
