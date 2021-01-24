@@ -1,0 +1,10 @@
+[Unit]
+Description=Battery Monitor Service
+After=multi-user.target
+
+[Service]
+Type=idle
+ExecStart=/home/pi/C_Code/monitor_battery
+
+[Install]
+WantedBy=multi-user.target
