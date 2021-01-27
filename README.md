@@ -9,6 +9,10 @@ The Video "Portable Raspberry Pi Laptop with a Custom Battery Charger" is at thi
 
 https://vimeo.com/504006511
 
+The Hackster.IO project "Laptop Battery Charge Controller" is at this url:
+
+https://www.hackster.io/frank-adams/laptop-battery-charge-controller-e9c3dc
+
 The folders at this repo are organized as follows:
 
   AT Tiny Supervisor folder contains the AT Tiny 85 code to supervise the charging of a 3 series or 4 series wired battery pack.
@@ -16,7 +20,7 @@ The folders at this repo are organized as follows:
   Cairo Fuel Gauge folder contains the application and main C code, header code, make file, desktop file, and icon used by Cairo. These files were modified from 
   https://github.com/rricharz/Raspberry-Pi-easy-drawing
   
-  Charge_Controller_Board_Files folder contains the Eagle layout and schematic, parts list, and initial test procedure.
+  Charge_Controller_Board_Files folder contains the Eagle layout and schematic, parts list, and test procedure.
   
   Dell_D630_Portable_Pi_KVM folder contains the keyboard matrix and Teensy 3.2 Arduino code for controlling the keyboard, touchpad, and video converter card.
   
