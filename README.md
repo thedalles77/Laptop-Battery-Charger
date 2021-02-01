@@ -20,7 +20,7 @@ The folders at this repo are organized as follows:
   Cairo Fuel Gauge folder contains the application and main C code, header code, make file, desktop file, and icon used by Cairo. These files were modified from 
   https://github.com/rricharz/Raspberry-Pi-easy-drawing
   
-  Charge_Controller_Board_Files folder contains the Eagle layout and schematic, parts list, and test procedure.
+  Eagle_Board_Files folder contains two folders: One for the Max1873 board and one for the MP26123_4 board. They contain the Eagle layout and schematic, parts list, and test procedure.
   
   Dell_D630_Portable_Pi_KVM folder contains the keyboard matrix and Teensy 3.2 Arduino code for controlling the keyboard, touchpad, and video converter card.
   
