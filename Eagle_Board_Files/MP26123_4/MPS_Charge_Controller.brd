@@ -1146,7 +1146,7 @@ design rules under a new name.</description>
 <attribute name="PROD_ID" value="CAP-08469" x="64.88" y="-5.87" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="30.59" y="26.261" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
 </element>
-<element name="C6" library="SparkFun-Capacitors" package="0805" value="0.1µF" x="33.5" y="27.85" smashed="yes" rot="R90">
+<element name="C6" library="SparkFun-Capacitors" package="0805" value="0.15µF" x="33.5" y="27.85" smashed="yes" rot="R90">
 <attribute name="NAME" x="32.611" y="27.85" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
 <attribute name="PROD_ID" value="CAP-08469" x="66.52" y="65.95" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="34.389" y="27.85" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>

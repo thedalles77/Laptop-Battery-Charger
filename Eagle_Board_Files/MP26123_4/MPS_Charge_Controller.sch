@@ -5085,7 +5085,7 @@ Source: &lt;a href="http://www.littelfuse.com/products/fuses/surface-mount-fuses
 <part name="GND5" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="C3" library="SparkFun-Capacitors" deviceset="0.33UF/330NF" device="-0805-50V-10%" value="0.1µF"/>
 <part name="C2" library="SparkFun-Capacitors" deviceset="0.33UF/330NF" device="-0805-50V-10%" value="0.1µF"/>
-<part name="C6" library="SparkFun-Capacitors" deviceset="0.33UF/330NF" device="-0805-50V-10%" value="0.1µF"/>
+<part name="C6" library="SparkFun-Capacitors" deviceset="0.33UF/330NF" device="-0805-50V-10%" value="0.15µF"/>
 <part name="GND9" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="R11" library="0603_RESISTOR" deviceset="0603_RESISTOR" device="" value="750"/>
 <part name="C8" library="SparkFun-Capacitors" deviceset="0.33UF/330NF" device="-0805-50V-10%" value="2200pF"/>
