@@ -13,6 +13,10 @@ The Hackster.IO project "Laptop Battery Charge Controller" is at this url:
 
 https://www.hackster.io/frank-adams/laptop-battery-charge-controller-e9c3dc
 
+The Hackaday.IO project "Laptop Battery Charger" is at this url:
+
+https://hackaday.io/project/177700/details/
+
 The folders at this repo are organized as follows:
 
   AT Tiny Supervisor folder contains the AT Tiny 85 code to supervise the charging of a 3 series or 4 series wired battery pack.
@@ -25,5 +29,7 @@ The folders at this repo are organized as follows:
   Dell_D630_Portable_Pi_KVM folder contains the keyboard matrix and Teensy 3.2 Arduino code for controlling the keyboard, touchpad, and video converter card.
   
   My_Ugly_C_Code folder contains the Pi C code that reads the battery status registers over the SMBus.
+  
+  CP2112 folder contains the code and board files to build a USB to SM Bus bridge for reading the battery status registers.
   
   
