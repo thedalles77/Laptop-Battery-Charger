@@ -1,3 +1,4 @@
+// This code is from Nick Dademo https://github.com/nickdademo/cp2112_demo with minor modifications
 #include <stdio.h>
 #include <stdlib.h>
 
