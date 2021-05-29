@@ -5,7 +5,7 @@ https://github.com/nickdademo/cp2112_demo
 
 On a PC, put both of the dll files in the same folder as the exe file so it will execute without errors.
 The C file can be modified to show more or less of the battery registers.
-I used Microsoft Visual Studio and Visual C++ to run Nick Dademo's code. 
+I used Microsoft Visual Studio and Visual C++ to build and modify Nick Dademo's code. 
 His files were from an old version of Visual Studio but they were updated automatically.
 
 The Eagle brd file includes the recommended footprint for the slotted holes on the USB connector.
