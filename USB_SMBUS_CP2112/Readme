@@ -1,0 +1,7 @@
+See Step 15 of this Instructable for more information regarding the CP2112:
+https://www.instructables.com/Battery-Powered-Raspberry-Pi-in-Repurposed-Laptop/
+
+On a PC, put both of the dll files in the same folder as the exe file so it will execute without errors.
+The C file can be modified to show more or less of the battery registers.
+The Eagle brd file includes the recommended footprint for the slotted holes on the USB connector.
+To fabricate this board at OSH Park, upload the zip file which has been run thru a CAM processor to create the proper slotted holes.
