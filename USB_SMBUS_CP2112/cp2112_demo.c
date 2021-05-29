@@ -138,17 +138,45 @@ int main(int argc, char* argv[])
     }
     UINT16 remCap = (buffer[1] << 8) | buffer[0];
     fprintf(stderr, "Remaining Capacity = %d mAh\r\n", remCap);
-
-    // Average Time to Empty [0x12]
-    targetAddress[0] = AVERAGE_TIME_TO_EMPTY;
-    if (SMBus_Read(m_hidSmbus, buffer, BATTERY_SLAVE_ADDRESS_W, sbsCommandResponseLength[AVERAGE_TIME_TO_EMPTY], 1, targetAddress) != sbsCommandResponseLength[AVERAGE_TIME_TO_EMPTY])
+// Check if discharging
+    if (current_mA <= 0)
     {
-        fprintf(stderr,"ERROR: Could not perform SMBus read.\r\n");
+        // Average Time to Empty [0x12]
+        targetAddress[0] = AVERAGE_TIME_TO_EMPTY;
+        if (SMBus_Read(m_hidSmbus, buffer, BATTERY_SLAVE_ADDRESS_W, sbsCommandResponseLength[AVERAGE_TIME_TO_EMPTY], 1, targetAddress) != sbsCommandResponseLength[AVERAGE_TIME_TO_EMPTY])
+        {
+            fprintf(stderr, "ERROR: Could not perform SMBus read.\r\n");
+            SMBus_Close(m_hidSmbus);
+            return -1;
+        }
+        UINT16 avgTimeToEmpty = (buffer[1] << 8) | buffer[0];
+        fprintf(stderr, "Average Time to Empty = %d minutes\r\n", avgTimeToEmpty);
+    }
+    else
+    {
+        // Average Time to Full [0x13]
+        targetAddress[0] = AVERAGE_TIME_TO_FULL;
+        if (SMBus_Read(m_hidSmbus, buffer, BATTERY_SLAVE_ADDRESS_W, sbsCommandResponseLength[AVERAGE_TIME_TO_FULL], 1, targetAddress) != sbsCommandResponseLength[AVERAGE_TIME_TO_FULL])
+        {
+            fprintf(stderr, "ERROR: Could not perform SMBus read.\r\n");
+            SMBus_Close(m_hidSmbus);
+            return -1;
+        }
+        UINT16 avgTimeToFull = (buffer[1] << 8) | buffer[0];
+        fprintf(stderr, "Average Time to Full = %d minutes\r\n", avgTimeToFull);
+    }
+    // Temperature [0x08]
+    targetAddress[0] = TEMPERATURE;
+    if (SMBus_Read(m_hidSmbus, buffer, BATTERY_SLAVE_ADDRESS_W, sbsCommandResponseLength[TEMPERATURE], 1, targetAddress) != sbsCommandResponseLength[TEMPERATURE])
+    {
+        fprintf(stderr, "ERROR: Could not perform SMBus read.\r\n");
         SMBus_Close(m_hidSmbus);
         return -1;
     }
-    UINT16 avgTimeToEmpty = (buffer[1] << 8) | buffer[0];
-    fprintf(stderr, "Average Time to Empty = %d minutes\r\n", avgTimeToEmpty);
+    UINT16 TempC = (buffer[1] << 8) | buffer[0];
+    TempC = (TempC / 10) - 273;
+    fprintf(stderr, "Temperature = %d C\r\n", TempC);
+
     /*
     // Manufacturer Name [0x20]
     targetAddress[0] = MANUFACTURER_NAME;
