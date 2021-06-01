@@ -30,6 +30,6 @@ The folders at this repo are organized as follows:
   
   My_Ugly_C_Code folder contains the Pi C code that reads the battery status registers over the SMBus.
   
-  USB_SMBUS_CP2112 folder contains the code and board files to build a USB to SM Bus bridge for reading the battery status registers.
+  USB_SMBUS_CP2112 folder contains the board files to build a USB to SM Bus bridge for reading the battery status registers. See https://github.com/thedalles77/cp2112_demo for the code to display the battery status registers.
   
   
