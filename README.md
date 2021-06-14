@@ -17,12 +17,12 @@ The Hackaday.IO project "Laptop Battery Charger" is at this url:
 
 https://hackaday.io/project/177700/details/
 
+A battery fuel gauge using Cairo can be found at this location: 
+https://github.com/thedalles77/Raspberry-Pi-easy-drawing
+
 The folders at this repo are organized as follows:
 
   AT Tiny Supervisor folder contains the AT Tiny 85 code to supervise the charging of a 3 series or 4 series wired battery pack.
-  
-  Cairo Fuel Gauge folder contains the application and main C code, header code, make file, desktop file, and icon used by Cairo. These files were modified from 
-  https://github.com/rricharz/Raspberry-Pi-easy-drawing
   
   Eagle_Board_Files folder contains two folders: One for the Max1873 board and one for the MP26123_4 board. They contain the Eagle layout and schematic, parts list, and test procedure.
   
