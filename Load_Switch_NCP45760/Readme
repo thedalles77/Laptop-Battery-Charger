@@ -1,3 +1,13 @@
-This Load Switch circuit uses an NCP45760 chip and is described in step 11 of my Instructable,
-https://www.instructables.com/Battery-Powered-Raspberry-Pi-in-Repurposed-Laptop/
+I had problems getting this NCP45760IMN24RTWG load switch to work but I'll provide the information in case someone else has better luck. 
+Let me know if you find a way to make it work.
 The Eagle board and schematic files are provided along with pictures.
+The 3.3 volt regulator can be an AP7381-33V-A through hole or the AP7381-33Y-13 SMD. The caps are 0805 case size and the resistors are 0603 size.
+The loads on the switch were two LM2596 buck regulators that provided 10 volts to the video card and 5 volts to the Pi. 
+Each buck regulator had a 100uf cap on its input and a 220uf cap on its output with more caps on the Pi and video card.
+The input voltage was 19 Volts DC from a wall supply.
+I started with the overcurrent resistor R2 set at 10K and the slew rate capacitor C4 set to 0.01uf but this caused the current protection circuit to trip when first enabled.
+Changing the R2 resistor to a short did not change anything but changing the C4 slew rate cap to 1uf allowed the switch to work without tripping the protection circuit.
+It ran for 30 minutes and the temperature on the chip and input/output traces stabilized at 52 deg C.
+Unfortuantely the load switch would not turn off so I apparently ruined the chip by setting the slew rate to a very slow value.
+Even changing the slew rate cap to 0.1uf will still exceed the Energy rating based on the formulas in the data sheet.
+This leads me to believe that this chip is not usable for my configuration but it may work fine at lower voltages and/or lower currents.
