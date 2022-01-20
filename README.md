@@ -11,13 +11,19 @@ The Video "Portable Raspberry Pi Laptop with a Custom Battery Charger" is at thi
 
 https://vimeo.com/504006511
 
-The Hackster.IO project "Laptop Battery Charge Controller" is at this url:
+The Max1873 based battery charge controller board shown below is detailed as a 
+Hackster.IO project at this url:
 
 https://www.hackster.io/frank-adams/laptop-battery-charge-controller-e9c3dc
 
-The Hackaday.IO project "Laptop Battery Charger" is at this url:
+![](Images/max1873.jpg)
+
+The MP26123 based battery charge controller board shown below is detailed as a 
+Hackaday.IO project at this url:
 
 https://hackaday.io/project/177700/details/
+
+![](Images/mp26123.jpg)
 
 A battery fuel gauge using Cairo can be found at this location: 
 https://github.com/thedalles77/Raspberry-Pi-easy-drawing
