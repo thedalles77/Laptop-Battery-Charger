@@ -1,6 +1,8 @@
 # Laptop-Battery-Charger
 This repository has all the files that I used to repurpose a Dell D630 laptop into a portable Raspberry Pi. 
 
+![](Images/Laptop.png)
+
 The Instructable "Battery Powered Raspberry Pi in Repurposed Laptop" is at this url:
 
 https://www.instructables.com/Battery-Powered-Raspberry-Pi-in-Repurposed-Laptop/
