@@ -16,7 +16,7 @@ Hackster.IO project at this url:
 
 https://www.hackster.io/frank-adams/laptop-battery-charge-controller-e9c3dc
 
-![](Images/max1873.jpg)
+![](Images/max1873.JPG)
 
 The MP26123 based battery charge controller board shown below is detailed as a 
 Hackaday.IO project at this url:
